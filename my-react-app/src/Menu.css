@@ -1,0 +1,211 @@
+.Menu {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat Alternates', sans-serif;
+    overflow: hidden;
+}
+
+.App-logo {
+    display: flex;
+    width: 200px;
+    margin-top: 40px;
+    margin-left: 25px;
+}
+
+.Sidebar {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 250px;
+    height: 100%;
+    background: #7A0103;
+    transition: .5s ease;
+}
+
+.active {
+    left: 10;
+}
+
+ul {
+    margin: 0;
+    padding: 20px 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li a {
+    padding: 10px;
+}
+
+.sidebarBtn {
+    position: absolute;
+    top: 0;
+    right: -50px;
+    width: 50px;
+    height: 50px;
+    box-sizing: border-box;
+    cursor: pointer;
+    background: #f5f5f5;
+    border: none;
+    outline: none;
+}
+
+.Sidebar .svg-inline--fa {
+    color: white;
+}
+
+.Sidebar header {
+    font-family: 'Lilita One', cursive;
+    text-shadow: 2px 2px black;
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    line-height: 120px;
+    margin-top: -40px;
+}
+
+.Sidebar ul li {
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 20px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+ul li:hover a {
+    font-size: 40px;
+    transition: .4s;
+}
+
+.Categories {
+    color: white;
+    margin-left: 20px;
+    list-style: none;
+    text-decoration: none;
+}
+
+img {
+    background: transparent;
+    padding: 0px;
+    width: 150px;
+    height: 130px;
+}
+
+table {
+    position: relative;
+    border-spacing: 0px;
+    width: 80%;
+    margin-top: 200px;
+    margin-left: 300px;
+    border: 2px solid #dddddd;
+}
+
+
+table td {
+    text-align: center;
+}
+
+.seeCartBtn {
+    position: absolute;
+    font-family: 'Lilita One', cursive;
+    font-size: 20px;
+    margin-top: -130px;
+    background: #7A0103;
+    color: #fff;
+    border:none;
+    border-radius: 10px;
+    padding: 15px;
+    min-height: 25px;
+    min-width: 100px;
+    cursor: pointer;
+    text-shadow: 2px 2px black;
+}
+
+.seeCartBtn:hover {
+    background: #f6bc66;
+    transition: .5s ease;
+}
+
+.orderSummary {
+    background: #7A0103;
+    color: white;
+    height: 50px;
+}
+
+.orderSummary .orderTotal {
+    font-family: 'Lilita One', cursive;
+    padding-top: 10px;
+    font-size: 25px
+}
+
+.orderSummary .orderSmry {
+    font-family: 'Lilita One', cursive;
+    padding: 20px;
+    font-size: 30px;
+    text-shadow: 2px 2px black;
+}
+
+.orderBtn {
+    background: #7A0103;
+    height: 100px;
+}
+
+.orderBtn input {
+
+    font-size: 30px;
+}
+
+.orderBtn input:hover {
+    color: pink;
+}
+
+.menu-table {
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 200px;
+    background: white;
+}
+
+.cancelBtn {
+    font-family: 'Lilita One', cursive;
+    font-size: 20px;
+    margin-top: 10px;
+    background: #7A0103;
+    color: #fff;
+    border:none;
+    border-radius: 10px;
+    padding: 15px;
+    min-height: 25px;
+    min-width: 100px;
+    cursor: pointer;
+    text-shadow: 2px 2px black;
+}
+
+.checkoutBtn {
+    font-family: 'Lilita One', cursive;
+    font-size: 20px;
+    margin-top: 10px;
+    background: #7A0103;
+    color: #fff;
+    border:none;
+    border-radius: 10px;
+    padding: 15px;
+    min-height: 25px;
+    min-width: 100px;
+    cursor: pointer;
+    text-shadow: 2px 2px black;
+}
+
+.menu-buttons input {
+
+}
+
+
+
+

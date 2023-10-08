@@ -1,0 +1,316 @@
+.Dashboard {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat Alternates', sans-serif;
+    overflow: hidden;
+}
+
+.App-logo {
+    display: flex;
+    width: 200px;
+    margin-top: 40px;
+    margin-left: 25px;
+}
+
+.Sidebar {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 250px;
+    height: 100%;
+    background: #7A0103;
+    transition: .5s ease;
+}
+
+.active {
+    left: 10;
+}
+
+ul {
+    margin: 0;
+    padding: 20px 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li a {
+    padding: 10px;
+}
+
+.sidebarBtn {
+    position: absolute;
+    top: 0;
+    right: -50px;
+    width: 50px;
+    height: 50px;
+    box-sizing: border-box;
+    cursor: pointer;
+    background: #f5f5f5;
+    border: none;
+    outline: none;
+}
+
+
+.Sidebar .svg-inline--fa {
+    color: white;
+}
+
+.Sidebar header {
+    font-family: 'Lilita One', cursive;
+    text-shadow: 2px 2px black;
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    line-height: 120px;
+    margin-top: -40px;
+}
+
+.Sidebar ul li {
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 20px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+ul li:hover a {
+    font-size: 40px;
+    transition: .4s;
+}
+
+.Categories {
+    color: white;
+    margin-left: 20px;
+    list-style: none;
+    text-decoration: none;
+}
+
+table {
+    position: relative;
+    border-spacing: 0px;
+    width: 80%;
+    margin-top: 300px;
+    margin-left: 300px;
+    border: 2px solid #dddddd;
+}
+
+.table th {
+    font-family: 'Lilita One', cursive;
+    font-size: 1.5em;
+    text-shadow: 2px 2px black;
+    letter-spacing: 1.5px;
+}
+
+.table td, .table th {
+    padding: .75em;
+    vertical-align: top;
+    text-align: center
+}
+
+.table td > a.btn {
+    padding: .3em 1em;
+    font-size: 1.1em;
+    margin: 0.2em;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.table tr {
+    transition: .5s;
+}
+
+.table tr:hover {
+    background: #f6bc66;
+
+}
+
+.table th {
+    color: white;
+    background: #7A0103;
+    border-color: #7A0103;
+}
+
+.addPerson {
+    position: absolute;
+    font-family: 'Lilita One', cursive;
+    font-size: 20px;
+    margin-top: -130px;
+    background: #7A0103;
+    color: #fff;
+    border:none;
+    border-radius: 10px;
+    padding: 15px;
+    min-height: 25px;
+    min-width: 100px;
+    cursor: pointer;
+    text-shadow: 2px 2px black;
+}
+
+.logoutBtn {
+    position: absolute;
+    font-family: 'Lilita One', cursive;
+    font-size: 20px;
+    margin-top: -130px;
+    margin-left: 93.5%;
+    background: #7A0103;
+    color: #fff;
+    border:none;
+    border-radius: 10px;
+    padding: 15px;
+    min-height: 25px;
+    min-width: 100px;
+    cursor: pointer;
+    text-shadow: 2px 2px black;
+}
+
+.logoutBtn:hover {
+    background: #f6bc66;
+    transition: .5s ease;
+}
+
+.addPerson:hover {
+    background: #f6bc66;
+    transition: .5s ease;
+}
+
+.center, .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+#click {
+   display: none;
+}
+
+#btn {
+   display: none;
+
+}
+
+.click-edit {
+    transition: .3s;
+    cursor: pointer;
+    padding: 15px;
+    font-size: 18px;
+}
+
+.click-edit:hover {
+    color: #7A0103;
+}
+
+.close-modal {
+    position: absolute;
+    margin-top: -30px;
+    margin-left: 430px;
+    color: white;
+    cursor: pointer;
+}
+
+.close-modal:hover {
+    color: pink;
+}
+
+.content {
+    width: 500px;
+    height: 380px;
+    background: white;
+    border-radius: 20px;
+    font-size: 20px;
+    box-shadow: 0 2px 12px 0 rgba(0,0,0,.4);
+}
+
+.content form {
+    display: table;
+    margin-top: 25px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+
+.content p {
+    display: table-row;
+}
+
+.content span {
+    display: table-cell;
+    padding-right: 20px;
+}
+
+.content input {
+    display: table-cell;
+    margin-top: 10px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.content select {
+    display: table-cell;
+    margin-top: 10px;
+}
+
+.submit {
+    position: absolute;
+    font-family: 'Lilita One', cursive;
+    font-size: 20px;
+    margin-top: 80px;
+    margin-left: 50px;
+    background: #7A0103;
+    color: #fff;
+    border:none;
+    border-radius: 10px;
+    padding: 15px;
+    min-height: 25px;
+    min-width: 400px;
+    cursor: pointer;
+    text-shadow: 2px 2px black;
+}
+
+
+.header {
+    height: 68px;
+    background: #7A0103;
+    overflow: hidden;
+    border-radius: 20px 20px 0 0;
+    box-shadow: 0 2px 12px 0 rgba(0,0,0,.2);
+
+}
+
+.header h2 {
+    font-family: 'Lilita One', cursive;
+    color: white;
+    padding-left: 32px;
+    padding-top: 20px;
+}
+
+h3 {
+   color: white;
+   font-size: 25px;
+   padding-left: 60px;
+   margin-top: -10px;
+   box-shadow: 0 2px 12px 0 rgba(0,0,0,.2);
+}
+
+.center ul {
+    padding-top: 20px;
+    text-align: left;
+}
+
+select {
+    font-size: 20px;
+    width: 250px;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
